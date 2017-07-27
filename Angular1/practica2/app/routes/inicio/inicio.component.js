@@ -1,3 +1,3 @@
 export default {
-    template: ['Inicio funciona'].join('')
+    template: ['Hola Modulo Inicio'].join('')
 };
