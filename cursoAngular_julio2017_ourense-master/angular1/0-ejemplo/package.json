@@ -1,0 +1,17 @@
+{
+  "name": "0-yarn",
+  "version": "1.0.0",
+  "main": "app.module.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "angular": "1.6.4"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --content-base app --hot"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "practica-0",
+  "version": "1.0.0",
+  "description": "practica 0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --content-base app --hot"
+  },
+  "author": "Jose Luis Rego Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}

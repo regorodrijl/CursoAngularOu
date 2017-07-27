@@ -1,0 +1,21 @@
+<form name="formulario" ng-submit="enviar()">
+    <b>Título:</b>: <input name="titulo" ng-model="elemento.titulo" required>
+    <br/>
+    <b>Autor:</b><input name="autor" ng-model="elemento.autor" required>
+    <br/>
+    <b>E-Mail:</b><input name="email" ng-model="elemento.email" email>
+    <br/>
+    <b>Año:</b><input name="anho" ng-model="elemento.anho" validador>
+    <br/>
+    <button type="submit">Enviar</button>
+    <br/>
+    <button ng-mouseover="mostrarAyuda()">Ayuda</button>
+</form>
+
+<span ng-show="formulario.titulo.$invalid">El título es necesario.</span>
+<br/>
+<span ng-show="formulario.autor.$touched && formulario.autor.$invalid">El autor es necesario.</span>
+<br/>
+<span ng-show="formulario.email.$invalid">El email es necesario.</span>
+<br/>
+<span ng-show="formulario.anho.$invalid">El año no es válido.</span>
