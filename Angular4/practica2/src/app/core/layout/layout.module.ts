@@ -7,12 +7,14 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { MainContentComponent } from './main-content/main-content.component';
 
 import { InicioModule } from '../../routes/inicio/inicio.module';
+import { SobreModule } from "../../routes/sobre/sobre.module";
 
 @NgModule({
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    InicioModule
+    InicioModule,
+    SobreModule
   ],
   declarations: [ShellComponent, TopBarComponent, MainContentComponent],
   exports: [ShellComponent]
