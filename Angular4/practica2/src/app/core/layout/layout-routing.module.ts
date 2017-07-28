@@ -7,6 +7,10 @@ const routes: Routes = [
    {
     path: '',
     component: InicioComponent
+  },
+  {
+    path:'catalogo',
+    loadChildren: '../../routes/catalogo/catalogo.module#CatalogoModule'
   }
 ];
 
