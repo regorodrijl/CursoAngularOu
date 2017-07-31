@@ -1,0 +1,37 @@
+<html ng-app="ejemplo">
+
+<head>
+    <title>EJEMPLO</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="inicio">Inicio</a></li>
+            <li><a ui-sref="catalogo.buscador">Buscar</a></li>
+            <ul>
+                <li><a ui-sref="catalogo.nuevo">Nuevo</a></li>
+            </ul>
+            <li><a ui-sref="hola">hola</a></li>
+            <li><a ui-sref="sobre">Sobre</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+    <script src="vendor.js"></script>
+    <script src="ejemplo.js"></script>
+</body>
+
+</html>
