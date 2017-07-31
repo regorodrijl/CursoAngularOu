@@ -56,7 +56,7 @@ export class NuevoComponent implements OnInit {
       numero: [
         this.elemento.numero, [
           Validators.required,
-          this.validatorsService.validador]
+          this.validatorsService.validadorMas10]
       ],
     };
     return controls;

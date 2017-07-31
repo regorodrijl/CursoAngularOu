@@ -30,8 +30,6 @@
   <section name="numero-control">
     <label for="numero">Numero:</label>
     <input formControlName="numero" type="number" />
-    <small *ngIf="mustShowErrors('numero')" class="float-right">
-              El numero no es válido.
-        </small>
+    <small *ngIf="mustShowErrors('numero')" class="float-right">El numero debe ser mayor que 10</small>
   </section>
 </form>
