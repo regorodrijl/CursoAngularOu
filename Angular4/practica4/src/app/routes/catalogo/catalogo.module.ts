@@ -7,13 +7,16 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { ListaComponent } from './lista/lista.component';
 
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from "../../core/shared/shared.module";
+import { NuevoComponent } from './nuevo/nuevo.component';
 
 @NgModule({
   imports: [
     CommonModule,
     CatalogoRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
-  declarations: [CatalogoComponent, BuscarComponent, ListaComponent]
+  declarations: [CatalogoComponent, BuscarComponent, ListaComponent, NuevoComponent]
 })
 export class CatalogoModule { }

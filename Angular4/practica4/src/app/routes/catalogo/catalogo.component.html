@@ -2,5 +2,8 @@
 <b>Busqueda binding One-Way binding:</b><br>
 <a routerLink="/catalogo/buscar">->Buscar</a><br>
 <b>Busqueda binding Two-Way binding:</b><br>
+<nav>
+    <a routerLink="/catalogo/nuevo">   ->Nuevo</a>
+</nav>
 <cat-lista [(busqueda)]="busqueda.value" (callback)="funcionCallback()"></cat-lista>
 

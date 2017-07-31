@@ -1,0 +1,37 @@
+<form [formGroup]="nuevoForm">
+  <section name="titulo-control">
+    <label for="titulo">Título:</label>
+    <input formControlName="titulo" type="text" />
+    <small *ngIf="nuevoForm.get('titulo').invalid" class="float-right">
+              El título es necesario.
+        </small>
+  </section>
+  <section name="autor-control">
+    <label for="autor">Autor:</label>
+    <input formControlName="autor" type="text" />
+    <small *ngIf="nuevoForm.get('autor').touched && nuevoForm.get('autor').invalid" class="float-right">
+              El autor es necesario.
+        </small>
+  </section>
+  <section name="email-control">
+    <label for="email">Email:</label>
+    <input formControlName="email" type="text" />
+    <small *ngIf="nuevoForm.get('email').invalid" class="float-right">
+              El email es necesario.
+        </small>
+  </section>
+  <section name="anho-control">
+    <label for="anho">Año:</label>
+    <input formControlName="anho" type="number" />
+    <small *ngIf="mustShowErrors('anho')" class="float-right">
+              El año no es válido.
+        </small>
+  </section>
+  <section name="numero-control">
+    <label for="numero">Numero:</label>
+    <input formControlName="numero" type="number" />
+    <small *ngIf="mustShowErrors('numero')" class="float-right">
+              El numero no es válido.
+        </small>
+  </section>
+</form>
