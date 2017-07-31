@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Busqueda } from "./-data/busqueda.model";
 
 @Component({
   selector: 'cat-catalogo',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoComponent implements OnInit {
 
+  public busqueda: Busqueda;
+
   constructor() { }
 
   ngOnInit() {
+    this.busqueda = new Busqueda('');
   }
-
+  
+  funcionCallback(){
+    console.log("Valos de Busqueda->", this.busqueda.value );
+  }
 }
