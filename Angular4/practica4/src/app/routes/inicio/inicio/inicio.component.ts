@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { CompartirInfoService } from "../compartir-info.service";
 
 @Component({
   selector: 'cat-inicio',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+ 
+  constructor(
+     public compartirInfo: CompartirInfoService
+  ) { }
 
   ngOnInit() {
+    this.compartirInfo.setEdad(2);
   }
-
 }
