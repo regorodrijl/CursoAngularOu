@@ -8,12 +8,14 @@ import { CompartirInfoService } from "../compartir-info.service";
 })
 export class InicioComponent implements OnInit {
 
- 
+
   constructor(
-     public compartirInfo: CompartirInfoService
+    public compartirInfo: CompartirInfoService
   ) { }
 
   ngOnInit() {
+    console.log("Valor anterior " + this.compartirInfo.edad);
     this.compartirInfo.setEdad(2);
+    console.log("Inicio pone:" + this.compartirInfo.edad);
   }
 }

@@ -14,6 +14,8 @@ export class MinionComponent implements OnInit {
   
 
   ngOnInit() {
-    console.log("Valor Minion: ", this.compartirInfo.getEdad());
+    console.log("Valor anterior: ", this.compartirInfo.getEdad());
+    this.compartirInfo.setEdad(Math.abs(Math.random()*100));
+    console.log("Minion pone: "+ this.compartirInfo.getEdad());
   }
 }

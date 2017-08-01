@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CompartirInfoService {
-  public edad:number;
+  public edad:number=0;
 
   constructor() { }
 
