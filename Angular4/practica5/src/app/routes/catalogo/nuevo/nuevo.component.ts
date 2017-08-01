@@ -81,4 +81,8 @@ export class NuevoComponent implements OnInit {
     return controlErrors;
   }
 
+  eventoCambio(){
+    console.log("Valor form: ",this.nuevoForm.value);
+  }
+
 }

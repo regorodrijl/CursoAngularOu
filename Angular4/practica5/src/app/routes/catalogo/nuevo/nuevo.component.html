@@ -1,4 +1,4 @@
-<form [formGroup]="nuevoForm">
+<form [formGroup]="nuevoForm" (ngSubmit)="eventoCambio()">
   <section name="titulo-control">
     <label for="titulo">Título:</label>
     <input formControlName="titulo" type="text" />
@@ -8,7 +8,7 @@
   </section>
   <section name="autor-control">
     <label for="autor">Autor:</label>
-    <input formControlName="autor" type="text" />
+    <input formControlName="autor" type="text" (change)="eventoCambio()" />
     <small *ngIf="nuevoForm.get('autor').touched && nuevoForm.get('autor').invalid" class="float-right">
               El autor es necesario.
         </small>
@@ -32,4 +32,5 @@
     <input formControlName="numero" type="number" />
     <small *ngIf="mustShowErrors('numero')" class="float-right">El numero debe ser mayor que 10</small>
   </section>
+  <button type="submit">btn</button>
 </form>
